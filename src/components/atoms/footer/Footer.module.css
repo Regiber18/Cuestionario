@@ -1,0 +1,9 @@
+#cal_footer {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #318CE7;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
