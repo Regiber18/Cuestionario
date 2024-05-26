@@ -17,13 +17,13 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
    };`  
 
 function Button(props) {
+      const addArgument = (event) => {
+        const data = new Data()
+        data.pushElement(event.target.name)
+        alert(event.target.name)
+      }
+      
     
-    const addArgument = (event) => {
-          alert(event.target.name)
-          let information = event.target.name
-          Data.push(information)
-     }
-
     return(<ButtonStyled  onClick={addArgument} type={props.type} name={props.val} >{props.text}</ButtonStyled>)
 }
 

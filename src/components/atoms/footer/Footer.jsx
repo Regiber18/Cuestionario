@@ -3,10 +3,9 @@ import Data from "../../../data/Data"
 
 
 function Footer() {
-    return(<footer id={Style.cal_footer}>{
-        console.log(Data)
-        }
-     </footer>)
+  
+    return(<span id={Style.cal_footer}>
+     </span>)
 }
 
 export default Footer; 

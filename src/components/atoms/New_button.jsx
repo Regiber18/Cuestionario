@@ -17,10 +17,13 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
    };`  
 
 function Button_new() {
-
     
+    const data = new Data()
+    const showALl = () => {
+        data.print()
+    }
 
-    return(<ButtonStyled  ></ButtonStyled>)
+    return(<ButtonStyled onClick={showALl} ></ButtonStyled>)
 }
 
 export default Button_new;
