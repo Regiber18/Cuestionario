@@ -1,5 +1,5 @@
 import './App.css'
-import Questionarie from "./pages/page"
+import Questionarie from "./pages/Pages"
 function App() {
   
 
