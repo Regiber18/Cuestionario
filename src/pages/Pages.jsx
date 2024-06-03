@@ -1,7 +1,7 @@
 import Home from "../components/organisms/Questionarie"
-import Style from  "./page.module.css"
+import Style from  "./Pages.module.css"
 import ShowInformation from "../components/organisms/ShowInformation"
-function Page() {
+function Pages() {
 
     return(
         <div id={Style.login_home}>
@@ -11,4 +11,4 @@ function Page() {
     )
 }
 
-export default Page; 
+export default Pages; 
