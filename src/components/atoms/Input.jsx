@@ -1,23 +1,19 @@
 import styled from "styled-components"
-import Data from "../../data/Data"
 const InputStyled = styled.input `
     width:  90%; 
     height: 40px;
+    border: 1px solid; 
     border-radius: 5px; 
-    
-    &: hover {
-        backgroun-color: black;
-      }`
+`
 
     function Input (props) {
        
 
         const change = (event) => {
-            props.setVal(event.target.name)
-         }
-    
+            props.fnVal(event.target.value)
+        }
       
-        return(<InputStyled  name={props.value} onChange={change} type={props.type} placeholder={props.placeholder}></InputStyled>)
+        return(<InputStyled pattern={props.pattern} value={props.val} onChange={change} type={props.type} placeholder={props.placeholder}></InputStyled>)
     }
 
     export default Input; 

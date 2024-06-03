@@ -1,50 +1,14 @@
-import { defaultEquals } from "./util"
-import { Node } from  "../data/Node"; 
+let alumns = []
 
-export default class LinkedList {
-    constructor(equalsFn = defaultEquals) {
-    this.count = 0; 
-    this.head = undefined;
-    this.equalsFn = equalsFn;
-    }
-     pushElement(alumn) {
-        const node = new Node(alumn); 
-        let current; 
-        if (this.head == null) { 
-        this.head = node;
-        } else {
-        current = this.head;
-        while (current.next != null) {
-        current = current.next;
-        }
-        current.next = node; 
-        }
-        this.count++; 
-    }
+function addAlumns(nombre, grado, matricula) {
+    alumns.push({name: nombre, grade: grado, plaque: matricula})
 
-    isEmpty() {
-        return this.count === 0; 
-    }
+    return true;
+}
 
-    print() {
-        if(this.isEmpty()) {
-            alert("is empty")
-        }else {
-          let current = this.head;
-          let listvalues = ""
-         while (current) {
-            listvalues += 'el alumno es ${current.value}'
-            current = current.next;
-        }  
-        }
+const getAlumns = () => {
+    return alumns;
+}
 
-        
-       }
-
-    }
-    
-
-    
- 
-
+export default {addAlumns, getAlumns}
 
