@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-
 const ButtonStyled = styled.button`
       width: 70%;
       height: 45px;
@@ -12,8 +11,9 @@ const ButtonStyled = styled.button`
       justify-content: center;
       align-items: center;  
       box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-   &:hover {
-   background-color: #2ecc71; 
+
+      &:hover {
+       background-color: #2ecc71; 
  };`  
 
 function Button({title, onClick}) {
