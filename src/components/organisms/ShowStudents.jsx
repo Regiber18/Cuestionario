@@ -2,7 +2,7 @@ import Style from "./ShowStudents.module.css"
 import { useState } from "react";
 import Data from "../../data/Data"
 import Button from "../atoms/Button";
-import SectionStudent from "../molecules/CardStudent";
+import CardStudent from "../molecules/CardStudent";
 
 function ShowAlumns() {
     const [newAlumn, setNewAlumn] = useState([])  
@@ -14,11 +14,11 @@ function ShowAlumns() {
         for(let i=alumns.length-1;i>=0;i--) {
           let auxAlumn = alumns[i];
           newAlumns.push(
-            <SectionStudent key={i}
+            <CardStudent key={i}
               nombre={auxAlumn.name}  
               grado={auxAlumn.grade}
               group={auxAlumn.group}
-            ></SectionStudent>
+            ></CardStudent>
           )
         } 
         console.log(newAlumns)
