@@ -1,10 +1,10 @@
-import Style from "./ShowInformation.module.css"
+import Style from "./ShowStudents.module.css"
 import { useState } from "react";
 import Data from "../../data/Data"
 import Button from "../atoms/Button";
 import SectionStudent from "../molecules/CardStudent";
 
-function ShowInformation() {
+function ShowAlumns() {
     const [newAlumn, setNewAlumn] = useState([])  
     let newAlumns = []
     
@@ -40,4 +40,4 @@ function ShowInformation() {
     )
 }  
 
-export default ShowInformation; 
+export default ShowAlumns; 

@@ -1,15 +1,15 @@
-import Home from "../components/organisms/ForminAlumn"
+import Formin from "../components/organisms/ForminStudent"
 import Style from  "./Home.module.css"
-import ShowInformation from "../components/organisms/ShowInformation"
+import ShowStudents from "../components/organisms/ShowStudents"
 function Pages() {
 
     return(
         <div id={Style.register_home}>
             <section id={Style.register}>
-             <Home></Home>
+             <Formin></Formin>
             </section>
             <section id={Style.show}>
-             <ShowInformation></ShowInformation>
+             <ShowStudents></ShowStudents>
             </section>  
         </div>
     )

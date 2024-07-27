@@ -1,7 +1,7 @@
 import Field from "../molecules/Field"
 import Swal from "sweetalert2"
 import Button from "../atoms/Button"
-import Style from "./ForminAlumn.module.css"
+import Style from "./ForminStudent.module.css"
 import { useState } from "react";
 import Data from "../../data/Data"
 import StudentPng from "../../../public/man-student-2d-cartoon-illustraton-white-background-high_889056-26222.avif"
